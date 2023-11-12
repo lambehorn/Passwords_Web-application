@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.head {
+  width: 100%;
+  background-color: rgb(232, 189, 189);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.head__account {
+  margin: 21px;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-decoration: none;
+}
+.head__href {
+  margin: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.head__href > .head__account {
+  margin-left: 10px;
+}
+.head__exit {
+  margin: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.head__exit__button {
+  margin-right: 16px;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-decoration: none;
+  background-color: rgba(126, 106, 106, 0);
+  text-decoration: none;
+}
+.head__exit:hover {
+  background-color: rgb(232, 189, 189);
+}
+
+.container {
+  margin: 40px auto;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.application {
+  border-radius: 10px;
+  min-width: 210px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0 21px;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(232, 189, 189);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.application:hover {
+  background-color: rgb(249, 206, 206);
+}
+.application__text {
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-decoration: none;
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.input {
+  position: relative;
+}
+.input-text {
+  background-color: rgba(232, 189, 189, 0);
+  border: 0px;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-decoration: none;
+}
+.input-text:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(126, 106, 106);
+}
+
+.label {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-decoration: none;
+  pointer-events: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(249, 206, 206, 0);
+}
+
+.opacyti__zero {
+  opacity: 0;
+}
+
+.account {
+  border-radius: 10px;
+  min-width: 210px;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 21px 21px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgb(232, 189, 189);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+.account > .input {
+  margin: 40px;
+}
+.account__text {
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  text-decoration: none;
+  display: inline;
+  margin: 40px;
+}

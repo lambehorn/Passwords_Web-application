@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Passwords</title>
+
+  <link rel="stylesheet" href="css\login.css">
+</head>
+
+<body>
+  {{!-- контейнер с каруселью --}}
+  <div class="frame">
+      <div class="frame__swith">
+        <input id="reg" type="checkbox" class="input-swith">
+        <label for="reg" class="fake color1">
+          <div class="fake__round "></div>
+        </label>
+        <label for="reg" class="label-check noselect">Авторизироваться</label>
+      </div>
+
+    {{!-- карусель --}}
+    <div class="frame__carousel">
+      {{!-- итем карусели --}}
+      <div class="frame__carousel__item">
+        <img src="assets/login.svg" alt="" class="noselect">
+        <form method="post" action="/login" class="frame__carousel__item__login">
+          <div class="input">
+            <label for="" class="label noselect">Почта</label>
+            <input type="text" class="input-text" name="mail">
+          </div>
+          <div class="input">
+            <label for="" class="label noselect">Пароль</label>
+            <input type="text" class="input-text" name="password">
+          </div>
+          <button type="submit" class="button noselect">вход</button>
+        </form>
+      </div>
+      <div class="frame__carousel__item">
+        <form method="post" action="/reg" class="frame__carousel__item__reg">
+          <div class="input">
+            <label for="" class="label noselect">Имя</label>
+            <input type="text" class="input-text" name="name">
+          </div>
+          <div class="input">
+            <label for="" class="label noselect">Фамилия</label>
+            <input type="text" class="input-text" name="firstName">
+          </div>
+          <div class="input">
+            <label for="" class="label noselect">Пароль</label>
+            <input type="text" class="input-text" name="password">
+          </div>
+          <div class="input">
+            <label for="" class="label noselect">Почта</label>
+            <input type="text" class="input-text" name="mail">
+          </div>
+          <button type="submit" class="button noselect">авторизация</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/js/login.js"></script>
+  <script src="/js/label.js"></script>
+</body>
+
+</html>

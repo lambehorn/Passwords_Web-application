@@ -1,0 +1,174 @@
+// @import url('https://fonts.googleapis.com/css2 ?family=Inter:wght@100;500&family=Roboto:wght@100 &display=поменять местами');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+// переменные
+$color_pink_1: rgba(232, 189, 189, 1);
+$color_pink_2: rgba(194, 164, 164, 1);
+$color_pink_3: rgba(126, 106, 106, 1);
+
+// миксины
+@mixin text-style($color) {
+  color: $color;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+}
+
+@mixin button () {
+  background: $color_pink_3;
+  width: 150px;
+  height: 41px;
+  border-radius: 12px;
+  transition: .5s;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opacyti__zero {
+  opacity: 0;
+}
+
+.frame {
+  overflow: hidden;
+  width: 100px;
+  background-color: $color_pink_1;
+  border-radius: 30px;
+
+  &__carousel {
+    position: relative;
+    display: flex;
+    transition: .3s;
+
+    &__item {
+      padding: 100px 120px;
+
+
+      display: flex;
+      flex-direction: column;
+      height: 350px;
+      justify-content: center;
+      align-items: center;
+
+
+      &__login {
+        margin-top: 30px;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      &__reg {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.input {
+  position: relative;
+
+  &-text {
+    background-color: rgba(232, 189, 189, 0);
+    border: 0px;
+    @include text-style($color_pink_3);
+
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid $color_pink_3;
+
+    }
+  }
+}
+
+.label {
+  transition: .3s;
+  position: absolute;
+  @include text-style($color_pink_3);
+  pointer-events: none;
+}
+
+.button {
+  @include text-style($color_pink_1);
+  @include button();
+
+  &:hover {
+    background-color: rgb(77, 65, 65);
+  }
+}
+
+.frame__swith {
+  display: flex;
+  left: 50%;
+  transform: translate(-50%, 20px);
+  position: absolute;
+  z-index: 1;
+}
+
+.label-check {
+  margin-left: 10px;
+  transition: .3s;
+
+  @include text-style($color_pink_3);
+}
+
+.input-swith {
+  display: none;
+}
+
+.fake {
+  width: 30px;
+  height: 16px;
+  background-color: $color_pink_3;
+  border-radius: 100px;
+  position: relative;
+  transition: .3s;
+
+  &__round {
+    transition: .3s;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: $color_pink_1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-12px, -50%);
+  }
+}
+
+.color1 {
+  background-color: $color_pink_2;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}

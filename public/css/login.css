@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.opacyti__zero {
+  opacity: 0;
+}
+
+.frame {
+  overflow: hidden;
+  width: 100px;
+  background-color: rgb(232, 189, 189);
+  border-radius: 30px;
+}
+.frame__carousel {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.frame__carousel__item {
+  padding: 100px 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.frame__carousel__item__login {
+  margin-top: 30px;
+  height: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.frame__carousel__item__reg {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input {
+  position: relative;
+}
+.input-text {
+  background-color: rgba(232, 189, 189, 0);
+  border: 0px;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+}
+.input-text:focus {
+  outline: none;
+  border-bottom: 1px solid rgb(126, 106, 106);
+}
+
+.label {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  pointer-events: none;
+}
+
+.button {
+  color: rgb(232, 189, 189);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+  background: rgb(126, 106, 106);
+  width: 150px;
+  height: 41px;
+  border-radius: 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+.button:hover {
+  background-color: rgb(77, 65, 65);
+}
+
+.frame__swith {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 50%;
+  -webkit-transform: translate(-50%, 20px);
+          transform: translate(-50%, 20px);
+  position: absolute;
+  z-index: 1;
+}
+
+.label-check {
+  margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: rgb(126, 106, 106);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 3.92px;
+}
+
+.input-swith {
+  display: none;
+}
+
+.fake {
+  width: 30px;
+  height: 16px;
+  background-color: rgb(126, 106, 106);
+  border-radius: 100px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.fake__round {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background-color: rgb(232, 189, 189);
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-12px, -50%);
+          transform: translate(-12px, -50%);
+}
+
+.color1 {
+  background-color: rgb(194, 164, 164);
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>office</title>
+  <link rel="stylesheet" href="css/office.css">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <a href="/office?_id={{user._id}}" class="head__href">
+        <img src="assets\arrow.png" alt="">
+        <p class="head__account"> {{user.name}}</p>
+      </a>
+      <div class="head__exit">
+        <a href="/" class="head__exit__button">Выход</a>
+        <img src="assets\exit.svg" alt="" class="head__exit__img">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      {{!-- аккаунты --}}
+
+      {{#each acc}}
+
+      <div class="account">
+        <p class="account__text">Имя: <br> {{this.accountName}}</p>
+        <p class="account__text">пароль: <br>{{this.password}}</p>
+        <p class="account__text">почта: <br>{{this.mail}}</p>
+
+        <form method="post" action="/office/Application/deleteAccount?_id={{this.id}}">
+          <button type="submit">
+            <img src="assets/delete.svg" alt="">
+          </button>
+        </form>
+      </div>
+
+      {{/each}}
+
+      <form method="post" action="/office/Application/addAccount?_id={{app._id}}">
+        <div class="account">
+          <div class="input">
+            <label for="" class="label noselect">name</label>
+            <input type="text" class="input-text" name="accountName">
+          </div>
+          <div class="input">
+            <label for="" class="label noselect">password</label>
+            <input type="text" class="input-text" name="password">
+          </div>
+          <div class="input">
+            <label for="" class="label noselect">mail</label>
+            <input type="text" class="input-text" name="mail">
+          </div>
+          <button type="submit">
+            <img src="assets/plus.svg" alt="">
+          </button>
+        </div>
+      </form>
+
+
+
+    </div>
+  </main>
+
+  <script src="js/label.js"></script>
+</body>
+
+</html>
