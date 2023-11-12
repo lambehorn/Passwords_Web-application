@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>password office</title>
+  <link rel="stylesheet" href="css/office.css">
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <p class="head__account">{{user.name}}</p>
+      <div class="head__exit">
+        <a href="/" class="head__exit__button">Выход</a>
+        <img src="assets\exit.svg" alt="" class="head__exit__img">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      {{!-- приложения --}}
+
+      {{#each app}}
+      <a href="/application?_id={{this._id}}">
+        <div class="application">
+          <p class="application__text">{{this.application}}</p>
+          <form method="post" action="/office/deleteApplication?_id={{this.id}}">
+            <button type="submit">
+              <img src="assets/delete.svg" alt="">
+            </button>
+          </form>
+        </div>
+      </a>
+      {{/each}}
+
+
+      <form method="post" action="/office/addApplication?_id={{user._id}}">
+        <div class="application">
+          <div class="input">
+            <label for="" class="label noselect">app name</label>
+            <input type="text" class="input-text" name="name">
+          </div>
+          <button type="submit">
+            <img src="assets/plus.svg" alt="">
+          </button>
+        </div>
+      </form>
+
+
+    </div>
+  </main>
+
+  <script src="js/label.js"></script>
+</body>
+
+</html>
